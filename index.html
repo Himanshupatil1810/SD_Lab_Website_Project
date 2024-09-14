@@ -24,26 +24,26 @@
                 <img src="./images/chickenburger.png" alt="">
                 <h1>Chicken Burger</h1>
                 <p>Sink your teeth into the timeless perfection of our Chicken Burger, an experience that never goes out
-                        of style.</p>
+                    of style.</p>
                 <button>ORDER NOW</button>
             </div>
-                
+
             <div class="item">
                 <img src="./images/veg-delight-burger.png" alt="">
                 <h1>Veggie Delight Burger</h1>
                 <p>Embrace the vibrant flavors of our Veggie Delight Burger, a celebration of freshness and wholesome
-                        goodness.</p>
-                <button>ORDER NOW</button>    
+                    goodness.</p>
+                <button>ORDER NOW</button>
             </div>
-               
+
             <div class="item">
                 <img src="./images/BBQ.png" alt="">
                 <h1>BBQ Bacon Burger</h1>
                 <p>Indulge in a symphony of smoky, savory flavors with our BBQ Bacon Burger, grilled and topped with
-                        crispy bacon.</p>
-                <button>ORDER NOW</button>    
+                    crispy bacon.</p>
+                <button>ORDER NOW</button>
             </div>
-                
+
         </div>
     </div>
 
@@ -80,9 +80,12 @@
                 <span class="material-icons">calendar_today</span>
                 <input type="date" required>
             </div>
-            <div class="input-group">
-                <span class="material-icons">access_time</span>
-                <input type="time" required>
+            <div>
+                <div class="input-group">
+                    <span class="material-icons">access_time</span>
+                    <input type="time" id="timeInput" required>
+                </div>
+                <span style="color: red;" id="warning"></span>
             </div>
             <div class="input-group">
                 <span class="material-icons">people</span>
@@ -138,6 +141,32 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/009f565ce2.js" crossorigin="anonymous"></script>
+    <script>
+        function showError() {
+            warning.innerHTML = '*Shop opens at 09:00 AM';
+            setTimeout(() => {
+                warning.innerHTML = ""
+            }, 3000)
+        }
+        const timeInput = document.getElementById('timeInput');
+        const warning = document.getElementById('warning');
+        timeInput.addEventListener('input', function () {
+            const value = timeInput.value;
+            const minTime = "09:00";
+            const maxTime = "22:00";
+
+            if (value < minTime) {
+                timeInput.value = minTime;
+                showError();
+            }
+            
+            if (value > maxTime) {
+                timeInput.value = maxTime;
+                showError();
+            }
+        });
+    </script>
+
 </body>
 
 </html>
