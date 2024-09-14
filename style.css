@@ -7,7 +7,9 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .menu {
     display: flex;
     flex-direction: column;
@@ -135,15 +137,18 @@ img {
     text-align: justify;
     color: #555;
 }
-
+.event-img{
+    object-fit: cover;
+    overflow: hidden;
+}
 .eventsimg {
-    flex: 1;
     max-width: 500px;
     height: auto;
-    object-fit: cover;
-    margin-left: 20px;
+    transition: all 0.8s ease-in-out;
 }
-
+.event-img:hover .eventsimg{
+    scale: 1.1;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .item {
