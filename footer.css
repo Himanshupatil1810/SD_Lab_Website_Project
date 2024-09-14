@@ -1,0 +1,217 @@
+
+
+/* Reservation Section */
+.reservation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.reservation-section h1 {
+    font-size: 2.5rem;
+    color: #61310e;
+    font-family: 'Jacques Francois Shadow', serif;
+    margin-bottom: 10px;
+}
+
+.reservation-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Reservation Form */
+.reservation-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    max-width: 600px;
+    width: 100%; /* Ensures it takes full width of the container */
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-group:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .material-icons {
+    font-size: 24px;
+    color: #d31e1e;
+    margin-right: 10px;
+}
+
+.input-group input,
+.input-group select {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+/* Button Styling */
+.reservation-form button {
+    grid-column: span 2; 
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #d31e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background-color: #c4474b;
+}
+
+/* Footer Section */
+footer {
+    position: relative;
+    background: url('./images/footer.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+/* Dark Overlay */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Ensures the overlay stays behind the content */
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2; /* Makes sure the content is above the overlay */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #f2f2f2;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #e56961;
+}
+
+/* Social Media Icons */
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #e56961;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    z-index:10;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .reservation-section h1 {
+        font-size: 2rem;
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .reservation-section h1 {
+        font-size: 1.8rem;
+    }
+    .reservation-form {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .reservation-form button {
+        font-size: 1rem;
+    grid-column: span 1; 
+
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,39 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ribeye+Marrow&display=swap');
-.menu{
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.burgers{
+
+.burgers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
+
 .item {
-    width: 20vw;
+    width: 20vw; /* Width for larger screens */
     text-align: center;
     margin: 20px;
-    padding: 30px ;
+    padding: 30px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
 .item:hover {
-    transform: scale(0.95);  /* Slightly increase the size */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Add a shadow */
+    transform: scale(0.95); /* Slightly increase the size */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
     background-color: #f9f9f9; /* Change background color on hover */
 }
+
 img {
-    width: 100%; 
+    width: 100%;
     height: 200px;
     object-fit: cover;
     max-width: 300px;
 }
-.heading1{
+
+.heading1 {
     background-color: rgb(232, 169, 10);
     padding: 15px 25px;
     font-weight: bold;
@@ -41,37 +55,43 @@ img {
     font-size: 15px;
     font-stretch: expanded;
 }
-.heading2{
+
+.heading2 {
     font-size: 45px;
     margin: 0;
     font-family: "Jacques Francois Shadow", serif;
     font-weight: 400;
     font-style: normal;
     color: brown;
-}    
-.para{
+}
+
+.para {
     font-size: 1.2rem;
-    width: 81%;             
+    width: 81%;
     text-align: center;
-    margin-bottom: 0px; 
+    margin-bottom: 0;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
 }
-.item h1{
+
+.item h1 {
     font-size: 1.5rem;
 }
-.item button{
+
+.item button {
     background-color: rgb(211, 30, 30);
     color: white;
-    border: none; 
+    border: none;
     cursor: pointer;
     padding: 15px;
     font-size: 15px;
 }
-.item p{
+
+.item p {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
 }
+
 .events {
     display: flex;
     align-items: center;
@@ -82,11 +102,13 @@ img {
     max-width: 1200px;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-} 
+}
+
 .info {
     flex: 1;
     padding-right: 2rem;
 }
+
 .info h3 {
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -94,6 +116,7 @@ img {
     color: #333;
     margin: 0;
 }
+
 .info h1 {
     font-size: 2.5rem;
     font-family: 'Jacques Francois Shadow', serif;
@@ -101,15 +124,80 @@ img {
     margin: 10px 0;
     font-weight: bold;
 }
+
 .info p {
     font-size: 1.2rem;
     text-align: justify;
     color: #555;
 }
+
 .eventsimg {
     flex: 1;
     max-width: 500px;
     height: auto;
     object-fit: cover;
-    margin-left: 20px; 
-}    
+    margin-left: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .item {
+        width: 45vw; /* Increase width for medium screens */
+    }
+
+    .events {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .eventsimg {
+        margin-left: 0; /* Remove left margin */
+        max-width: 100%; /* Make image responsive */
+    }
+
+    .info {
+        padding-right: 0; /* Remove right padding */
+        text-align: center; /* Center text */
+    }
+
+    .info h1 {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    .info h3 {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .item {
+        width: 90vw; /* Full width on small screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .item h1 {
+        font-size: 1.2rem; /* Smaller heading */
+    }
+
+    .item button {
+        padding: 10px; /* Reduce button padding */
+        font-size: 14px; /* Smaller button font */
+    }
+
+    .para {
+        width: 100%; /* Full width for paragraph */
+    }
+
+    .info h1 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .info h3 {
+        font-size: 1rem; /* Smaller subheading */
+    }
+
+    .info p {
+        font-size: 1rem; /* Smaller paragraph */
+    }
+}
