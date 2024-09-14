@@ -6,7 +6,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-
 }
 
 .menu {
@@ -21,16 +20,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
     margin: 20px;
     margin-bottom: 0;
+
 }
 
 .item {
-    width: 20vw; /* Width for larger screens */
+    width: 25vw;
     text-align: center;
-    margin: 20px;
-    padding: 30px;
+    margin: 5px;
+    padding: 20px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -54,6 +54,8 @@ img {
     font-family: 'Arial', sans-serif;
     font-size: 15px;
     font-stretch: expanded;
+    margin: 35px;
+    margin-bottom: 10px;
 }
 
 .heading2 {
@@ -76,6 +78,7 @@ img {
 
 .item h1 {
     font-size: 1.5rem;
+    margin: 12px;
 }
 
 .item button {
@@ -85,11 +88,13 @@ img {
     cursor: pointer;
     padding: 15px;
     font-size: 15px;
+    margin: 20px;
 }
 
 .item p {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
+    font-size: larger;
 }
 
 .events {
