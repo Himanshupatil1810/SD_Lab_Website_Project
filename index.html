@@ -81,9 +81,12 @@
                 <span class="material-icons">calendar_today</span>
                 <input type="date" required>
             </div>
-            <div class="input-group">
-                <span class="material-icons">access_time</span>
-                <input type="time" required>
+            <div>
+                <div class="input-group">
+                    <span class="material-icons">access_time</span>
+                    <input type="time" id="timeInput" required>
+                </div>
+                <span style="color: red;" id="warning"></span>
             </div>
             <div class="input-group">
                 <span class="material-icons">people</span>
@@ -156,6 +159,32 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/009f565ce2.js" crossorigin="anonymous"></script>
+    <script>
+        function showError() {
+            warning.innerHTML = '*Shop opens at 09:00 AM';
+            setTimeout(() => {
+                warning.innerHTML = ""
+            }, 3000)
+        }
+        const timeInput = document.getElementById('timeInput');
+        const warning = document.getElementById('warning');
+        timeInput.addEventListener('input', function () {
+            const value = timeInput.value;
+            const minTime = "09:00";
+            const maxTime = "22:00";
+
+            if (value < minTime) {
+                timeInput.value = minTime;
+                showError();
+            }
+            
+            if (value > maxTime) {
+                timeInput.value = maxTime;
+                showError();
+            }
+        });
+    </script>
+
 </body>
 
 </html>
