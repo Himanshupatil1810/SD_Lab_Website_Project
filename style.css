@@ -35,7 +35,7 @@
 }
 
 .item:hover {
-    transform: scale(0.95); /* Slightly increase the size */
+    /* transform: scale(0.95); Slightly increase the size */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
     background-color: #f9f9f9; /* Change background color on hover */
 }
@@ -60,7 +60,7 @@ img {
 
 .heading2 {
     font-size: 45px;
-    margin: 0;
+    margin: 10px;
     font-family: "Jacques Francois Shadow", serif;
     font-weight: 400;
     font-style: normal;
