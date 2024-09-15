@@ -23,6 +23,10 @@ body {
     justify-content: space-between;
     gap: 35px;
     font-weight: 700;
+    /* cursor: pointer; */
+}
+.nav-menu ul li{
+    transition: all 0.3s;
     cursor: pointer;
 }
 .nav-menu ul li:hover{
