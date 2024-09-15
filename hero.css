@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.logo img{
+    height: 45px;
+}
+.container{
+    width: 77%;
+    margin: auto;
+}
+.nav-items{
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-menu ul li:hover{
+    color:#df1c1c;
+}
+.nav-menu ul{
+    list-style: none;
+}
+.hero{
+    height: 95vh;
+    background: url("./images/header-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-left h3{
+    border: 2px dashed #42200b;
+    font-size: 28px;
+    font-weight:100;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 15px 2px;
+}
+.hero-left h2{
+    font-family: "Alfa Slab One", serif;    
+    font-size: 3rem;
+    color: #42200b;
+    font-weight: 800;
+    text-shadow: 2px 2px #fff;
+    text-align: left;
+    line-height: 3.75rem;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+.hero-left h1{
+    font-family: "Alfa Slab One", serif;    
+    font-size: 4.5rem;
+    color: #42200b;
+    font-weight: 300;
+    text-shadow: 2px 2px #fff;
+    text-align: left;
+    line-height: 3.75rem;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.hero-left{
+   margin-top: 140px;
+   width: 35%;
+}
+.hero-right{
+    background-image: url("./images/header.png");
+    height: 570px;
+    width: 570px;
+    /* margin-right: 10px; */
+    margin-bottom: 30px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hero-right img{
+    width:550px;
+}
+.hero-main{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+.special-box{
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    height: 50vh;
+}
+.special-left{
+    background: url("./images/banner-1.png");
+    width: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 1.8rem;
+}
+
+.item1{
+    background: url("./images/banner-2.png");
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    height: 47%;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 1.8rem;
+}
+.item2{
+    margin-top: 20px;
+    background: url("./images/banner-3.png");
+    width:40vw;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    height: 47%;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 1.8rem;
+}
