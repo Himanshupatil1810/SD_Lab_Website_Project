@@ -226,18 +226,19 @@ footer::before {
     cursor: pointer;
     text-align: center;
     width: 25%;
-    padding-top: 0.5rem;
+    padding : 0.5rem;
+    border: none;
 }
+
 .location-button a{
     text-decoration: none;
     font-size: 1.5rem;  
     color:  rgb(227, 234, 240);    
 }
-.location-button img{
-    padding: 2px 2px;
-    padding-top: 2px;
-    width: 15%;
-    height: 15%;
+.location-button i{
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 0.5rem;
 }
 
 .iframe-button {
@@ -299,5 +300,12 @@ footer::before {
     }
     .location-child div{    
         width: 100%;
+    }
+    .location-button a{
+        font-size: 1rem;
+        
+    }
+    .location-button{
+        width: 8rem;
     }
 }

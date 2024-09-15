@@ -56,5 +56,3 @@ document.querySelectorAll('.btn-slider').forEach((button, index) => {
         });
     });
 });
-
-  

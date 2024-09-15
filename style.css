@@ -25,6 +25,7 @@ html {
     position: relative;
     gap: 20px;
     margin: 30px 30px;
+    width: 100%;
 }
 .btn-slider {
     background: none;
@@ -48,6 +49,7 @@ html {
 .item {
     min-width: 35%; /* Ensure each item takes up the full width */
     text-align: center;
+    display: inline-block;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -201,7 +203,7 @@ img {
 
 @media screen and (max-width: 480px) {
     .item {
-        width: 90vw; /* Full width on small screens */
+        width: 400px; /* Full width on small screens */
         margin: 10px; /* Reduce margin */
     }
 
