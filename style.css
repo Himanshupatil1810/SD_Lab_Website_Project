@@ -20,19 +20,34 @@ html {
 
 .burgers {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    margin: 20px;
-    margin-bottom: 0;
-
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    margin: 30px 30px;
+}
+.btn-slider {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #333;
 }
 
+.btn-slider:first-of-type {
+    left: 10px;
+}
+
+.btn-slider:last-of-type {
+    right: 10px;
+}
 .item {
-    width: 25vw;
+    min-width: 35%; /* Ensure each item takes up the full width */
     text-align: center;
-    margin: 5px;
-    padding: 20px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -77,7 +92,11 @@ img {
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
 }
-
+.btn-slider{
+    padding: 10px 10px;
+    background-color: white;
+    font-size: 15px;
+}
 .item h1 {
     font-size: 1.5rem;
     margin: 12px;

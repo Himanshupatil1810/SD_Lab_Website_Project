@@ -38,4 +38,23 @@ gsap.from("#item3",{
   delay:1.5,
   scrollTrigger:"#item3"
 })
+
+// Slider Logic Code
+let currentSlide = 0;
+const items = document.querySelectorAll('.item');
+let totalSlides = items.length;
+
+document.querySelectorAll('.btn-slider').forEach((button, index) => {
+    button.addEventListener('click', () => {
+        if (index === 0) { // Left button
+            currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+        }else { // Right button
+            currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+        }
+        items.forEach((item, i) => {
+            item.style.transform = `translateX(${-60 * currentSlide}%)`;
+        });
+    });
+});
+
   

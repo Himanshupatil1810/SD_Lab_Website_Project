@@ -198,6 +198,7 @@ footer::before {
     position: relative;
 }
 
+/* Location */
 .location{
     display: flex;
     flex-direction: column;
@@ -221,18 +222,15 @@ footer::before {
     width: 50%;
 }
 .location-button{
-    background-color: rgb(66, 66, 187);
+    background-color: #d31e1e;
     cursor: pointer;
     text-align: center;
     width: 25%;
-    text-align: center;
     padding-top: 0.5rem;
 }
 .location-button a{
     text-decoration: none;
-    font-size: 1.5rem;
-    font-style:oblique;
-    font-weight: bold;
+    font-size: 1.5rem;  
     color:  rgb(227, 234, 240);    
 }
 .location-button img{
