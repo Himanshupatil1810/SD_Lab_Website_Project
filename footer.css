@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ribeye+Marrow&display=swap');
 /* Reservation Section */
 .reservation-section {
     display: flex;
@@ -221,21 +221,36 @@ footer::before {
     width: 50%;
 }
 .location-button{
-    color: #fff;
-    background-color: #d31e1e;
-    border: none;
-    border-radius: 5px;
+    background-color: rgb(66, 66, 187);
     cursor: pointer;
-    padding: 1rem;
-    padding-inline: 3rem;
-    text-decoration: none;
-    width: auto;
-    margin: auto;
     text-align: center;
+    width: 25%;
+    text-align: center;
+    padding-top: 0.5rem;
 }
+.location-button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style:oblique;
+    font-weight: bold;
+    color:  rgb(227, 234, 240);    
+}
+.location-button img{
+    padding: 2px 2px;
+    padding-top: 2px;
+    width: 15%;
+    height: 15%;
+}
+
 .iframe-button {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-child p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: larger;
 }
 /* Responsive Design */
 @media screen and (max-width: 768px) {
