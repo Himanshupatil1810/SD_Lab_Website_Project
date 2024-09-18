@@ -39,6 +39,10 @@ gsap.from("#item3",{
   scrollTrigger:"#item3"
 })
 
+// document.getElementById("menu-nav").addEventListener("click", function() {
+//   scrollToSection("#menu");
+// });
+
 // Slider Logic Code
 let currentSlide = 0;
 const items = document.querySelectorAll('.item');

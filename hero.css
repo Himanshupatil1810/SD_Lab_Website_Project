@@ -25,9 +25,11 @@ body {
     font-weight: 700;
     /* cursor: pointer; */
 }
-.nav-menu ul li{
+.nav-menu ul a{
     transition: all 0.3s;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 .nav-menu ul li:hover{
     color:#df1c1c;

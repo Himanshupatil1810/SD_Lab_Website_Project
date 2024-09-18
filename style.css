@@ -9,7 +9,8 @@
 }
 html {
     scroll-behavior: smooth;
-  }
+}
+
 .menu {
     display: flex;
     flex-direction: column;
