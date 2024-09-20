@@ -60,3 +60,12 @@ document.querySelectorAll('.btn-slider').forEach((button, index) => {
         });
     });
 });
+
+
+// Logic for hamburger
+const mobile_nav= document.querySelector(".hamburger");
+const nav_items=document.querySelector(".nav-items");
+const toggleNavbar = () => {
+  nav_items.classList.toggle("active");
+}
+mobile_nav.addEventListener("click", () => toggleNavbar());
