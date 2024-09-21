@@ -72,6 +72,8 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+
 }
 .hero-left h3{
     border: 2px dashed #42200b;
@@ -172,6 +174,7 @@ body {
 @media screen and (max-width:768px){
     .navbar{
         position: relative;
+
         /* background-color: #42200b; */
     }
     .nav-menu{
@@ -188,6 +191,7 @@ body {
         width: 12rem;
         padding: 2rem;
         border-radius: 10px;
+        transform: translateX(100%);
         
     }
     .nav-menu ul{
@@ -197,14 +201,22 @@ body {
         justify-content: center;
     } 
     .active .nav-menu{
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     .active .hamburger .ri-menu-line{
         display: none;
     }
+
+    .hamburger .ri-menu-line{
+        display: block;
+    }
     .active .hamburger .ri-close-line{
         display: block;
     }
+    .hamburger .ri-close-line{
+        display: none;
+    }
+
     .hamburger{
         display: block;
         z-index: 999;
